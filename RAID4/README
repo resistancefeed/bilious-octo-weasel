@@ -1,5 +1,5 @@
 This was an assignment for a Computer Science course called Operating Systems Design. The goal was to code a kernal based off of the given skeleton (vmemraid_GIVEN_skeleton.c) and header file with which to operate a virtual array of 4 disks to be used in a RAID 4 configuration. My submission is called vmemraid_main_josh.c. 
 
-I was one of two students in the entire class to receive a perfect 100%. Average was a 40%. 
+I was one of two students in the entire class to receive a perfect 100%. The class average was a 40%. 
 
 The assignment is described in the RAID4-assignment#4.pdf and information on using the supplied vm are in the other pdf.
