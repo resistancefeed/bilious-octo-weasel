@@ -139,7 +139,7 @@ static int StockFS_open(const char *path, struct fuse_file_info *fi)
 	memcpy(&servaddr.sin_addr, hent->h_addr, hent->h_length);
 	
 	/* connect to server */
-	if (connect(fd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) 		{
+	if (connect(fd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
 		close(fd); 
 		return -1;
 	}
