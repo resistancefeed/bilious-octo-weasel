@@ -201,8 +201,9 @@ static int StockFS_open(const char *path, struct fuse_file_info *fi)
 
 	/*close the socket*/
 	close(fd);
-	/* This if statement will check to see if it is a valid stock, if it isn't it will return an error 		and free the memory block */
 	
+	/* This if statement will check to see if it is a valid stock, if it isn't it will return an error
+	and free the memory block */
 	if(strcmp(cur->CurPrice,"0.00")==0){		
 		free(cur);
 		return -ENOENT;
