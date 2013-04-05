@@ -2,7 +2,7 @@ Rez
 ===
 
 This is a sample of some of my past work.
-Full information is included by following the respective link.
+Full information is included in the respective links above.
 Thanks for taking a look around!
 
 Summary Of Work-
