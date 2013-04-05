@@ -9,8 +9,8 @@ Thanks for taking a look around!
 
 Cartesian-Product: Discrete Math project to design an algorithm to compute the Cartesian Product
 
-DSD_Practicum2: Digital Systems Design Practicum to design and implement a Finite State Machine w/ Redundant State Reduction
-to specifications
+DSD_Practicum2: Digital Systems Design Practicum to design and implement a Finite State Machine w/ Redundant 
+State Reduction to specifications
 
 FUSE: Operating Systems Design project to design a virtual file system
 
