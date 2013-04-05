@@ -15,7 +15,8 @@
 
 
 static struct Stock_INFO{ 
-/* Struct used to hold data of any stock queried and different structs are maintained via a linked list. Each struct respresents a file in our directory.*/
+/* Struct used to hold data of any stock queried and different structs are maintained via a linked list. 
+Each struct respresents a file in our directory.*/
 	char Symbol [10];
 	char CompanyName [20];
 	char CurPrice[10];
@@ -30,7 +31,8 @@ static struct Stock_INFO{
 }*root;
 
 struct Stock_INFO *stock_search(char *stock){
-/* Function used to return pointer to particular's stock data if it is a file in our directory. Returns NULL if file not found */
+/* Function used to return pointer to particular's stock data if it is a file in our directory. 
+Returns NULL if file not found */
 	struct Stock_INFO *cur;
 	
 	for(cur=root;cur!=NULL;cur=cur->next){
@@ -42,7 +44,8 @@ struct Stock_INFO *stock_search(char *stock){
 }
 
 struct Stock_INFO *last_nextptr(void){
-/* Used to traverse linked list to find location of last link in the list in order to be able to use it's next pointer to add another link to the end of the list */
+/* Used to traverse linked list to find location of last link in the list in order to be able 
+to use it's next pointer to add another link to the end of the list */
 	struct Stock_INFO *cur = root;
 	if(root==NULL){}
 	else
@@ -62,7 +65,8 @@ int is_emptylist(void){
 
 
 static int StockFS_getattr(const char *path, struct stat *stbuf){
-/* Returns attributes to the virtual file system depending on the nature of what is being called. Attributes passed into FUSE's special stat structure. */
+/* Returns attributes to the virtual file system depending on the nature of what is being called. 
+Attributes passed into FUSE's special stat structure. */
 	int res = 0;	
 	memset(stbuf, 0, sizeof(struct stat));
 	if (strcmp(path, "/") == 0) { /*Is it a directory?*/
@@ -135,7 +139,7 @@ static int StockFS_open(const char *path, struct fuse_file_info *fi)
 	memcpy(&servaddr.sin_addr, hent->h_addr, hent->h_length);
 	
 	/* connect to server */
-	if (connect(fd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) 		{
+	if (connect(fd, (struct sockaddr *)&servaddr, sizeof(servaddr)) < 0) {
 		close(fd); 
 		return -1;
 	}
@@ -197,8 +201,9 @@ static int StockFS_open(const char *path, struct fuse_file_info *fi)
 
 	/*close the socket*/
 	close(fd);
-	/* This if statement will check to see if it is a valid stock, if it isn't it will return an error 		and free the memory block */
 	
+	/* This if statement will check to see if it is a valid stock, if it isn't it will return an error
+	and free the memory block */
 	if(strcmp(cur->CurPrice,"0.00")==0){		
 		free(cur);
 		return -ENOENT;
@@ -225,7 +230,8 @@ static int StockFS_open(const char *path, struct fuse_file_info *fi)
  }
 
 static int StockFS_read(const char *path, char *buf, size_t size, off_t offset, struct fuse_file_info *fi){
-/* Used to read directory contents. Searches for file designated by path name and passes the file's information into the buffer. */
+/* Used to read directory contents. Searches for file designated by path name and passes the file's information 
+into the buffer. */
 	size_t len;
 	(void) fi;
 	(void) offset;
@@ -270,7 +276,8 @@ static int StockFS_read(const char *path, char *buf, size_t size, off_t offset, 
 }
 
 static int StockFS_utime(const char *path, struct utimbuf *time){
-/*If touch command, utime called after open and used to designate file that was just opened to be designated as a favorite. */
+/*If touch command, utime called after open and used to designate file that was just opened to be 
+designated as a favorite. */
 	char *path_copy=strdup(path);
 	struct Stock_INFO *cur;
 	if((cur=stock_search(path_copy+1))!=NULL){
@@ -280,7 +287,8 @@ static int StockFS_utime(const char *path, struct utimbuf *time){
 }
 	
 static int StockFS_release(const char *path, struct fuse_file_info *fi){
-/*In the event that a file is opened that wasn't designated a favorite, it will be released after its information has been passed to the buffer to be read */
+/*In the event that a file is opened that wasn't designated a favorite, it will be released after its 
+information has been passed to the buffer to be read */
 	
 	(void) fi;
 	
