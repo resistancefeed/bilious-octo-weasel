@@ -1,1 +1,1 @@
-This Network-Centric Programming assignment gave us experience inspecting and patching code that could be used to gain access to a user's information.
+This Network-Centric Programming assignment gave us experience inspecting and patching code that could be used to gain access to a user's system. Full assignment information is available in Security_Assignment.pdf.
