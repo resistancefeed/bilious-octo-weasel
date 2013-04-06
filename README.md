@@ -21,6 +21,6 @@ NCP_Security: Network-Centric Programming assignment to identify and patch syste
 RAID4: Opearating Systems Design project to create a dynamically loadable kernal module to act as a driver for
 a virtual RAID4 Ramdisk
 
-Joshua Beninson Recommendation: Letter of Recommendation
+Econ_OperationTwist: Analyze and explain the affects of Federal Reserve policy for my Intermediate Economics Class
 
-Econ_OperationTwist: Analyze and explain the affects of Federal Reserve policy for myIntermediate Economics Class
+Joshua Beninson Recommendation: A letter of recommendation about my ability to  learn and implement new concepts quickly
