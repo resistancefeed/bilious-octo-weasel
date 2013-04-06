@@ -2,16 +2,12 @@ Rez
 ===
 
 This is a sample of some of my past work.
-<<<<<<< HEAD
-Full information is included by following the respective links above.
-=======
 Full information is included in the respective links above.
->>>>>>> f4f37d565d37da5fcfc955deabfa94094213984d
 Thanks for taking a look around!
 
 
 
-----------------------------------------------Summary Of Work-----------------------------------------------------------
+-------------------------------------Summary Of Work----------------------
 
 Cartesian-Product: Discrete Math project to design an algorithm to compute the Cartesian Product
 
