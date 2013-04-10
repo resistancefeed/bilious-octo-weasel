@@ -18,7 +18,7 @@ FUSE: Operating Systems Design project to design a virtual file system
 
 NCP_Security: Network-Centric Programming assignment to identify and patch system security vulnerabilities
 
-RAID4: Opearating Systems Design project to create a dynamically loadable kernal module to act as a driver for
+RAID4: Operating Systems Design project to create a dynamically loadable kernal module to act as a driver for
 a virtual RAID4 Ramdisk
 
 Econ_OperationTwist: Analyze and explain the affects of Federal Reserve policy for my Intermediate Economics Class
