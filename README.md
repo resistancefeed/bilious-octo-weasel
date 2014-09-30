@@ -11,6 +11,8 @@ Thanks for taking a look around!
 
 Cartesian-Product: Discrete Math project to design an algorithm to compute the Cartesian Product
 
+Commerce_Agents: A bash script for controlling a testing websites commerce agents
+
 DSD_Practicum2: Digital Systems Design Practicum to design and implement a Finite State Machine w/ Redundant 
 State Reduction to specifications
 
