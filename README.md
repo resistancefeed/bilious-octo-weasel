@@ -7,7 +7,7 @@ Thanks for taking a look around!
 
 
 
--------------------------------------Summary Of Work----------------------
+-----------------------------------------------Summary Of Work--------------------------------------------------
 
 Cartesian-Product: Discrete Math project to design an algorithm to compute the Cartesian Product
 
