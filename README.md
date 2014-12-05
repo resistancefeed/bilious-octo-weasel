@@ -5,7 +5,7 @@ This is a sample of some of my past work.
 Full information is included in the respective links above.
 Thanks for taking a look around!
 
-######### SUMMARY OF WORK #########
+############# SUMMARY OF WORK #########
 
 Cartesian-Product: Discrete Math project to design an algorithm to compute the Cartesian Product (written in C)
 
